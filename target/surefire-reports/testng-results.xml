@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="com.bdd.runner.TestRunner" duration-ms="5663" started-at="2022-08-28T17:04:28 GST" finished-at="2022-08-28T17:04:34 GST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.TestRunner@66982506]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Command line test" duration-ms="5663" started-at="2022-08-28T17:04:28 GST" finished-at="2022-08-28T17:04:34 GST">
+      <class name="com.bdd.runner.TestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.bdd.runner.TestRunner@66982506]" name="setUpClass" is-config="true" duration-ms="32" started-at="2022-08-28T17:04:28 GST" finished-at="2022-08-28T17:04:28 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@340b7ef6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.bdd.runner.TestRunner@66982506]" name="runScenario" duration-ms="5501" started-at="2022-08-28T17:04:28 GST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-08-28T17:04:34 GST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Home tab test link"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Demo1 features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 104.0.5112.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BARSHAMAHESH', ip: '192.168.0.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 101
+Current browser version is 104.0.5112.102 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'BARSHAMAHESH', ip: '192.168.0.175', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_341'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}], desiredCapabilities=Capabilities {browserName: chrome, goog:chromeOptions: {args: [], extensions: []}}}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:101)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:81)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:49)
+at com.bdd.utils.WebdriverUtils.getDriver(WebdriverUtils.java:11)
+at com.bdd.steps.Demosteps.user_navigates_to_the_application(Demosteps.java:16)
+at ✽.user navigates to the application(file:///C:/Users/user/eclipse-workspace/TestNGCucumber/src/test/resources/features/demo.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.bdd.runner.TestRunner@66982506]" name="tearDownClass" is-config="true" duration-ms="80" started-at="2022-08-28T17:04:34 GST" finished-at="2022-08-28T17:04:34 GST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.bdd.runner.TestRunner -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.bdd.runner.TestRunner -->
+</testng-results>
